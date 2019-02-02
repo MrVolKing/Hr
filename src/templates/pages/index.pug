@@ -1,0 +1,168 @@
+extends ../template
+
+block varibles
+    - var title = "Main"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        section.sect_breadcrumbs
+            .wrapper
+                a(href="#") home 
+                img(src="./images/left-arrow.png", alt="")
+                span
+                    | hr
+
+        section.sect1
+            .wrapper
+                .sect1__content
+                    .sect1__breadblock
+                        a(href="#") home 
+                        img(src="./images/left-arrow2.png", alt="")
+                        span
+                            | hr
+                    .sect1__titleblock
+                        .redsquare
+                        .desc
+                            span Присоединяйтесь к нам!
+                            p Двигаться к цели и что-то менять можно только с увлеченными<br> и талантливыми людьми!
+                        
+                    .sect1__buttonblock
+                        .button НАШИ ВАКАНСИИ
+
+        section.sectmenu
+            .wrapper
+                .sectmenu__content
+                    .sectmenu__item
+                        a(href="#project") ПРОЕКТ
+                    .sectmenu__item
+                        a(href="#tecnology") ТЕХНОЛОГИИ
+                    .sectmenu__item
+                        a(href="#cult") КУЛЬТУРА
+                    .sectmenu__item
+                        a(href="#team") КОМАНДА
+                    .sectmenu__item
+                        a(href="#ofis") ОФИС
+
+        section.sect2.blockblocks#project
+            .wrapper
+                .blockblocks__content
+                    .left
+                        .titleblock
+                            p.title Проект
+                        .subtitleblock
+                            p.subtitle Нам важно приносить реальную пользу нашим клиентам и получать конкретные результаты
+                        .textblock
+                            .text
+                                p Мы работаем с реальной проблематикой digital-маркетологов в агентствах, крупных компаниях и амбициозных профессионалов в своей области: большие объемы работы, много рутинного ручного труда, отсутствие автоматизации процессов вовсе, недостаток уровня персонализации маркетинговых сообщений. Мы создаем наши решения в тесном сотрудничестве с конечным пользователем, и наша цель - значимый для него результат, выраженный в росте дохода, экономии времени, сокращении бюджета.
+                    .right
+                        .blockimg(style="background-image: url(../images/sect2.png); background-size: cover;")
+                            //- img(src="./images/sect2.png", alt="")
+                            .min_redsquare
+
+        section.sect3.blockblocks#tecnology
+            .wrapper
+                .blockblocks__content
+                    .left
+                        .blockimg(style="background-image: url(../images/sect3.png); background-size: cover;")
+                            //- img(src="./images/sect3.png", alt="")
+                            .min_redsquare.min_redsquare_l
+
+                    .right
+                        .titleblock
+                            p.title Технологии
+                        .subtitleblock
+                            p.subtitle Мы в корне меняем подход к digital-маркетингу благодаря новым технологиям
+                        .textblock
+                            .text 
+                                span Высоконагруженный проект
+                                p Мы отправляем более 60 млн. писем в день, и наши кластеры в Kubernetes обрабатывают миллионы запросов в сутки. Мы используем контейнеры и динамическое масштабирование инфраструктуры для обеспечения отказоустойчивости сервиса под нагрузкой.
+                                span Микросервисная архитектура
+                                p Наша платформа построена на базе микросервисной архитектуры, где каждый модуль общается с другим по API. Мы также используем разделение фронтенда и бэкенда, таким образом обеспечивая гибкую и независимую разработку.
+                                span Актуальные технологии и профессиональный рост
+                                p Мы не боимся экспериментов и внедряем новое. В своей работе мы используем Python, Golang, Docker, React, ElasticSearch. В центре нашей концепции - использование технологий машинного обучения для Digital-маркетинга. Мы решаем сложные и амбициозные задачи, такие как разработка сложных рекомендательных систем и построение моделей для роста показателей бизнеса наших партнеров.
+
+                        
+        section.sect4.blockblocks#cult
+            .wrapper
+                .blockblocks__content
+                    .left
+                        .titleblock
+                            p.title Культура
+                        .subtitleblock
+                            p.subtitle Digital Contact - это пространство для реализации самых смелых идей и профессиональных вызовов.
+                        .textblock
+                            .text
+                                p У нас есть место для тех, кто хочет работать и видеть плоды своего труда, для тех кто хочет менять что-то по-настоящему и решать сложные задачи. Условия нашей работы определяются нашей установкой на результат: мы не любим лишние слова и бессмысленную формализацию.
+                                p Мы не жалеем ресурсов на обучение и развитие. У всех членов команды есть возможность быть услышанными, и у нас принято делиться идеями.
+                    .right
+                        .blockimg(style="background-image: url(../images/sect4.png); background-size: cover;")
+                            //- img(src="./images/sect4.png", alt="")
+                            .min_redsquare
+
+        section.sect5.blockblocks#team
+            .wrapper
+                .blockblocks__content
+                    .left
+                        .blockimg(style="background-image: url(../images/sect5.png); background-size: cover;")
+                            //- img(src="./images/sect5.png", alt="")
+                            .min_redsquare.min_redsquare_l
+
+                    .right
+                        .titleblock
+                            p.title Команда
+                        .subtitleblock
+                            p.subtitle Корпоративный формализм - это не про нас!
+                        .textblock
+                            .text 
+                                p Нас объединяет интерес к проекту и желание работать над ним, поэтому поэтому нам не приходится специально что-то делать, чтобы комфортно и эффективно работать вместе. У нас гибкое начало рабочего дня, посещение офиса по внутренней необходимости и отсутствие жесткого формального стиля во всем.
+                                p Мы доверяем своим коллегам, поэтому каждый сам выбирает, как наиболее эффективно решать задачи, стоящие перед ним, и каждый может принять участие в развитии продукта.
+                                
+        section.sect6.blockblocks#ofis
+            .wrapper
+                .blockblocks__content
+                    .left
+                        .titleblock
+                            p.title Офис
+                        .subtitleblock
+                            p.subtitle У нас есть офисы в Москве и Нью-Йорке, но наша команда распределена по всему миру
+                        .textblock
+                            .text
+                                p В наших офисах нет настольного футбола и кресел-подушек, на которых приятно развалиться с ноутбуком и грызть печенье. Мы не наклеиваем стикеры с единорогами за удачно найденное решение на монитор и не подбрасываем друг другу мотивирующие записки. Наши менеджеры не провожают нас с ежедневных/еженедельных/ежеквартальных/ежегодных/ежевековых митапов чашечкой какао и подбадривающим похлопыванием по плечу: “Ты молодец, главное - верь в себя, у тебя все получится, путь длиной в тысячу шагов начинается с одного шага”.
+                                p Нам нравится просто работать вместе, и каждый может выбирать, где и как ему удобнее и комфортнее.
+                    .right
+                        .blockimg(style="background-image: url(../images/sect6.png); background-size: cover;")
+                            //- img(src="./images/sect6.png", alt="")
+                            .min_redsquare
+
+        section.sect7
+            .wrapper
+                .sect7__blockblocks
+                    .sect7__blockitem
+                        .sect7__icon
+                            img(src="./images/calendar.png", alt="")
+                        .sect7__title   
+                            span Свободный график
+                        .sect7__text
+                            p Эффективнее работается по ночам? Не хочется тратить время на поездку в офис или просто нужно сосредоточиться? У нас это возможно!
+                    
+                    .sect7__blockitem
+                        .sect7__icon
+                            img(src="./images/dictionary.png", alt="")
+                        .sect7__title   
+                            span Компенсация обучения
+                        .sect7__text
+                            p Мы поддерживаем профессиональное развитие и готовы компенсировать от 50% до 100% стоимости обучения.
+
+                    .sect7__blockitem
+                        .sect7__icon
+                            img(src="./images/bonus.png", alt="")
+                        .sect7__title   
+                            span Система бонусов
+                        .sect7__text
+                            p Годовые и квартальные бонусы по результатам. Индивидуальные бонусы за личный вклад.
+
+                .sect7__button
+                    .button НАШИ ВАКАНСИИ

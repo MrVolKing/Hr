@@ -1,0 +1,27 @@
+.sectmenu{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding: rem(40) 0 rem(31) 0;
+    }
+
+    &__item{
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: rem(48);
+        
+        a{
+            color: #8a9196;
+            &:hover{
+                color: $brand_color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    .sectmenu{
+        display: none;
+    }
+    
+}
