@@ -44,6 +44,9 @@
                 font-weight: 500;
                 line-height: rem(48);
                 color: $white;
+                .br{
+                    display: none;
+                }
             }
             p{
                 font-size: rem(24);
@@ -88,6 +91,9 @@
                     font-size: 27px;
                     // font-weight: 500;   подключить болд
                     line-height: 27px;
+                    .br{
+                        display: block;
+                    }
                 }
                 p{
                     font-size: 18px;
