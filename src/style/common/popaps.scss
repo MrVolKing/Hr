@@ -21,9 +21,11 @@
     width: 100vw;
 }
 
+
+                                                                            // content
 .contentpopap{
     background-color: $white;
-    padding: rem(60) 0 rem(200) 0;
+    padding: rem(60) 0 rem(319) 0;
     position: relative;
     z-index: 20;
 
@@ -141,5 +143,57 @@
         }
 
         
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .modalDialogcustom{
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .contentpopap{
+        padding: 12px 14px 20px 14px;
+
+        &__head{
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        &__title{
+            width: 100%;
+            order: 3;
+            span{
+                font-size: 30px;
+                line-height: 28px;
+            }
+        }
+
+        .form{
+            &__content{
+                flex-direction: column;
+            }
+
+            &__left{
+                padding: 0;
+
+                input, .file_download{
+                    width: 100%;
+                }
+            }
+
+            &__right{
+                textarea{
+                    width: 100%;
+                    height: 158px;
+                    padding-top: 37px;
+                }
+            }
+
+            &__button{
+                margin-top: 44px;
+            }
+        }
     }
 }

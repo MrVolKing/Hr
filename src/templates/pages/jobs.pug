@@ -8,6 +8,15 @@ block content
     .content
         include ../common/header.pug
 
+        section.sect_breadcrumbs
+            .wrapper
+                a(href="#") home 
+                img(src="./images/left-arrow.png", alt="")
+                a(href="./index.html" style="margin-right: 4px;") hr
+                img(src="./images/left-arrow.png", alt="")
+                span
+                    | АКТУАЛЬНЫЕ ВАКАНСИИ
+
         section.sect1(style="background-image: url(./images/sect1_2.png);")
             .wrapper
                 .sect1__content
