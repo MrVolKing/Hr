@@ -19,6 +19,7 @@
     z-index: 10;
     height: 100vh;
     width: 100vw;
+
 }
 
 
@@ -52,6 +53,7 @@
     }
 
     &__cancel{
+        cursor: pointer;
         img{
             width: rem(19);
             height: (19);
@@ -97,6 +99,7 @@
                 height: rem(32);
                 display: flex;
                 justify-content: space-between;
+                cursor: pointer;
 
                 input{
                     display: none;
