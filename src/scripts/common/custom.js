@@ -28,7 +28,24 @@ $(document).ready(() => {
     });
 
 
-        
+   
+    
+    // popap
+
+    $('.show_popap').click(function() {
+        $('.modalDialogcustom').addClass('modalDialogcustom_active');
+        $('body').css('overflow', 'hidden')
+    });
+
+    $('.contentpopap__cancel').click(function() {
+        $('.modalDialogcustom').removeClass('modalDialogcustom_active');
+        $('body').css('overflow', 'visible')
+    });
+
+    $('.shadow_popap').click(function() {
+        $('.modalDialogcustom').removeClass('modalDialogcustom_active');
+        $('body').css('overflow', 'visible')
+    });
 
 
 });

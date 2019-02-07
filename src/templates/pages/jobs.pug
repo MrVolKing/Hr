@@ -1,0 +1,86 @@
+extends ../template
+
+block varibles
+    - var title = "Jobs"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        section.sect1(style="background-image: url(./images/sect1_2.png);")
+            .wrapper
+                .sect1__content
+                    .sect1__breadblock
+                        a(href="#") home 
+                        img(src="./images/left-arrow2.png", alt="")
+                        a(href="./index.html") hr
+                        img(src="./images/left-arrow2.png", alt="")
+                        span
+                            | АКТУАЛЬНЫЕ ВАКАНСИИ
+                    .sect1__titleblock
+                        .redsquare
+                        .desc
+                            span Актуальные вакансии
+                            //- p Двигаться к цели и что-то менять можно только с увлеченными<br> и талантливыми людьми!
+                        
+                    .sect1__buttonblock
+                        button.button.show_popap ОТПРАВИТЬ РЕЗЮМЕ
+        section.jobs
+            .wrapper
+                .jobs__content
+                    .jobs__item
+                        .jobs__title 
+                            span Программист Python
+                        .jobs__text
+                            p В команду разработки Digital Contact в группу Machine Learning ищем Front-end разработчика уровня middle и выше. Проект связан с автоматизацией маркетинга и продаж (анализ поведения пользователя, Machine Learning, рекомендационные сервисы и т.д.)
+                        .jobs__subtitle
+                            span Задачи
+                        .jobs__desc
+                            span Разработка новых интерфейсов и улучшение старых
+                        .jobs__subtitle
+                            span Требования
+                        .jobs__ul
+                            ul
+                                li JavaScript es6 (vanilla)
+                                li ReactJS
+                                li SCSS
+
+                    .jobs__item
+                        .jobs__title 
+                            span Разработчик Frontend
+                        .jobs__text
+                            p В команду разработки Digital Contact в группу Machine Learning ищем Front-end разработчика уровня middle и выше. Проект связан с автоматизацией маркетинга и продаж (анализ поведения пользователя, Machine Learning, рекомендационные сервисы и т.д.)
+                        .jobs__subtitle
+                            span Задачи
+                        .jobs__desc
+                            span Разработка новых интерфейсов и улучшение старых
+                        .jobs__subtitle
+                            span Требования
+                        .jobs__ul
+                            ul
+                                li JavaScript es6 (vanilla)
+                                li ReactJS
+                                li SCSS
+
+                    .jobs__item
+                        .jobs__title 
+                            span Аккаунт-менеджер
+                        .jobs__text
+                            p В команду разработки Digital Contact в группу Machine Learning ищем Front-end разработчика уровня middle и выше. Проект связан с автоматизацией маркетинга и продаж (анализ поведения пользователя, Machine Learning, рекомендационные сервисы и т.д.)
+                        .jobs__subtitle
+                            span Задачи
+                        .jobs__desc
+                            span Разработка новых интерфейсов и улучшение старых
+                        .jobs__subtitle
+                            span Требования
+                        .jobs__ul
+                            ul
+                                li JavaScript es6 (vanilla)
+                                li ReactJS
+                                li SCSS
+
+                    .jobs__button
+                        button.button.show_popap ОТПРАВИТЬ РЕЗЮМЕ
+
+        include ../common/popaps.pug

@@ -57,6 +57,9 @@
 
     &__buttonblock{
         padding-left: rem(40);
+        .button:hover{
+            color: $white;
+        }
     }
 }
 
