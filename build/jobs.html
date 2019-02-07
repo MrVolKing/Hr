@@ -7,7 +7,7 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?6">
+    <link rel="stylesheet" href="./styles/app.min.css?7">
   </head>
   <body>
     <div class="content">
@@ -19,7 +19,7 @@
               <div class="header__menu">
                 <div class="header__menu_item"><a href="#">Platform          </a></div>
                 <div class="header__menu_item"><a href="#">Capabilities</a></div>
-                <div class="header__menu_item"><a href="#">Companyugi</a></div>
+                <div class="header__menu_item"><a href="#">Company</a></div>
               </div>
             </div>
             <div class="header__right">
@@ -112,39 +112,40 @@
         </div>
       </section>
       <div class="modalDialogcustom">
-        <div class="shadow_popap"></div>
-        <div class="contentpopap"> 
-          <div class="wrapper">
-            <div class="contentpopap__head">
-              <div class="contentpopap__logo"><img src="./images/logo.png" alt=""></div>
-              <div class="contentpopap__title"><span>Apply Now!</span></div>
-              <div class="contentpopap__cancel"><img src="./images/cancel.png" alt=""></div>
+        <div class="wrappercontentpopap">
+          <div class="contentpopap"> 
+            <div class="wrapper">
+              <div class="contentpopap__head">
+                <div class="contentpopap__logo"><img src="./images/logo.png" alt=""></div>
+                <div class="contentpopap__title"><span>Apply Now!</span></div>
+                <div class="contentpopap__cancel"><img src="./images/cancel.png" alt=""></div>
+              </div>
+              <form class="form">
+                <div class="form__content">
+                  <div class="form__left">
+                    <input type="text" placeholder="Имя*" required>
+                    <input type="email" placeholder="E-mail*" required>
+                    <input type="text" placeholder="Фамилия*" required>
+                    <input type="tell" placeholder="Телефон" required>
+                    <label class="file_download">
+                      <input type="file" placeholder="Приложите резюме*" required><span>Приложите резюме*</span>
+                      <div>Файл не выбран</div>
+                    </label>
+                  </div>
+                  <div class="form__right">
+                    <textarea placeholder="Расскажите несколько слов о себе"></textarea>
+                  </div>
+                </div>
+                <div class="form__button">
+                  <button class="button" type="submit">ОТПРАВИТЬ РЕЗЮМЕ</button>
+                </div>
+              </form>
             </div>
-            <form class="form">
-              <div class="form__content">
-                <div class="form__left">
-                  <input type="text" placeholder="Имя*" required>
-                  <input type="email" placeholder="E-mail*" required>
-                  <input type="text" placeholder="Фамилия*" required>
-                  <input type="tell" placeholder="Телефон" required>
-                  <label class="file_download">
-                    <input type="file" placeholder="Приложите резюме*" required><span>Приложите резюме*</span>
-                    <div>Файл не выбран</div>
-                  </label>
-                </div>
-                <div class="form__right">
-                  <textarea placeholder="Расскажите несколько слов о себе"></textarea>
-                </div>
-              </div>
-              <div class="form__button">
-                <button class="button" type="submit">ОТПРАВИТЬ РЕЗЮМЕ</button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
     </div>
-    <script src="./dist/js/jquery-3.2.1.min.js?6"></script>
-    <script src="./scripts/app.js?6"></script>
+    <script src="./dist/js/jquery-3.2.1.min.js?7"></script>
+    <script src="./scripts/app.js?7"></script>
   </body>
 </html>

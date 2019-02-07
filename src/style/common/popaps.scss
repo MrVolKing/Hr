@@ -1,15 +1,19 @@
 .modalDialogcustom{
-    display: none;
+    transform: translateY(-100%);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 10000;
+    background-color: $white;
+    transition: .5s;
+    
 }
 
 .modalDialogcustom_active{
-    display: block;
+    transform: translateY(0);
+    transition: .5s;
 }
 
 .shadow_popap{
@@ -22,11 +26,20 @@
 
 }
 
+.wrappercontentpopap{
+    height: 100%;
+    width: 100%;
+    padding: rem(40) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
                                                                             // content
 .contentpopap{
     background-color: $white;
-    padding: rem(60) 0 rem(319) 0;
+    // padding: rem(60) 0 rem(319) 0;
     position: relative;
     z-index: 20;
 
@@ -68,10 +81,12 @@
         &__left{
             display: flex;
             flex-direction: column;
-            padding: 0 rem(63) 0 rem(78);
+            // padding: 0 rem(63) 0 rem(78);
+            width: 50%;
+            padding-right: rem(30);
 
             input{
-                width: rem(390);
+                width: 100%;
                 height: rem(32);
                 margin-bottom: rem(35);
                 border: none;
@@ -95,7 +110,7 @@
 
             .file_download{
                 border-bottom: 1px solid #dddddd; 
-                width: rem(390);
+                width: 100%;
                 height: rem(32);
                 display: flex;
                 justify-content: space-between;
@@ -129,8 +144,10 @@
         }
 
         &__right{
+            width: 50%;
+            padding-left: rem(30);
             textarea{
-                width: rem(390);
+                width: 100%;
                 border: none;
                 border-bottom: 1px solid #dddddd;
                 resize: none;
@@ -187,6 +204,7 @@
             }
 
             &__right{
+                padding: 0;
                 textarea{
                     width: 100%;
                     height: 158px;
