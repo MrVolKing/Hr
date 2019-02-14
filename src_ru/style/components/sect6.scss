@@ -1,0 +1,20 @@
+.sect6{
+    padding: rem(86) 0 rem(129) 0;
+    background-color: $bg_color;
+    .left{
+       padding-right: rem(90);
+    }
+
+}
+
+@media screen and (max-width:769px){
+    .sect6{
+        padding: 37px 0;
+        .blockblocks__content{
+            flex-direction: column-reverse;
+        }
+        .left{
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.sect5{
+    padding: rem(96) 0 rem(127) 0;
+
+    .right{
+       padding-left: rem(90);
+    }
+}
+
+@media screen and (max-width:769px){
+    .sect5{
+        padding: 44px 0 29px 0;
+        .left{
+            width: 100%;
+        }
+        .right{
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.sect3{
+    padding: rem(102) 0 rem(94) 0;
+
+    .right{
+       padding-left: rem(90);
+    }
+
+}
+
+@media screen and (max-width:769px){
+    .sect3{
+        padding: 34px 0 27px 0;
+        .left{
+            width: 100%;
+        }
+        .right{
+            padding: 0;
+        }
+    }
+
+    
+}

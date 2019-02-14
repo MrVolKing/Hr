@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jobs</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta content="ie-edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./styles/app.min.css?1">
+  </head>
+  <body>
+    <div class="content">
+      <header class="sect_header">
+        <div class="wrapper">
+          <div class="header">
+            <div class="header__left"><a class="header__logo" href="./index.html"><img src="./images/logo.svg" alt=""></a>
+              <div class="header__menu">
+                <div class="header__menu_item"><a href="#">Platform          </a></div>
+                <div class="header__menu_item"><a href="#">Capabilities</a></div>
+                <div class="header__menu_item"><a href="#">Company</a></div>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__demo">
+                <div class="button"> <img src="./images/play.svg" alt=""><span>DEMO</span></div>
+              </div>
+              <div class="header__burger burger"><img src="./images/burger.svg" alt=""></div>
+            </div>
+            <div class="adaptmenu">
+              <div class="close"><img src="./images/close.png" alt=""></div>
+              <div class="content">
+                <div class="m">Menu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="sect_breadcrumbs">
+        <div class="wrapper"><a href="#">home </a><img src="./images/left-arrow.png" alt=""><a href="./index.html" style="margin-right: 4px;">hr</a><img src="./images/left-arrow.png" alt=""><span>АКТУАЛЬНЫЕ ВАКАНСИИ</span></div>
+      </section>
+      <section class="sect1" style="background-image: url(./images/sect1_2.png);">
+        <div class="wrapper">
+          <div class="sect1__content">
+            <div class="sect1__breadblock"><a href="#">home </a><img src="./images/left-arrow2.png" alt=""><a href="./index.html">hr</a><img src="./images/left-arrow2.png" alt=""><span>АКТУАЛЬНЫЕ ВАКАНСИИ</span></div>
+            <div class="sect1__titleblock">
+              <div class="redsquare"></div>
+              <div class="desc"><span>Актуальные<br class="br"> вакансии</span></div>
+            </div>
+            <div class="sect1__buttonblock">
+              <button class="button show_popap">ОТПРАВИТЬ РЕЗЮМЕ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="jobs">
+        <div class="wrapper">
+          <div class="jobs__content">
+            <div class="jobs__item">
+              <div class="jobs__title"> <span>Backend разработчик</span></div>
+              <div class="jobs__subtitle"><span>Задачи</span></div>
+              <div class="jobs__desc"><span>Разработка и поддержка микросервисов, самостоятельное ведение мини-проектов.</span></div>
+              <div class="jobs__subtitle"><span>Требования</span></div>
+              <div class="jobs__desc"><span>Опыт разработки от 3 лет, хорошее знание python или Golang, владение технологиями нашего стэка, опыт работы и знание git, unix.</span></div>
+              <div class="jobs__subtitle"><span>Стек технологий</span></div>
+              <div class="jobs__desc"><span>python3, go, docker, docker-compose, mysql, mongodb, rabbitmq, redis, elasticsearch, clickhouse, uwsg</span></div>
+            </div>
+            <div class="jobs__item">
+              <div class="jobs__title"> <span>ML Data Scientist</span></div>
+              <div class="jobs__subtitle"><span>Задачи</span></div>
+              <div class="jobs__desc"><span>Моделирование, предиктивная аналитика, организация сбора, подготовки и работы с большими данными в области Digital-маркетинга</span></div>
+              <div class="jobs__subtitle"><span>Требования</span></div>
+              <div class="jobs__ul">
+                <ul>
+                  <li>понимание основ теории вероятности / линейной алгебры</li>
+                  <li>уверенное владение инструментарием / технологиями анализа / обработки данных</li>
+                  <li>навыки программирования R / Python</li>
+                  <li>аналитический, data-driven подход к решению задач</li>
+                </ul>
+              </div>
+            </div>
+            <div class="jobs__item">
+              <div class="jobs__title"> <span>Менеджер по работе с клиентами/аккаунт менеджер</span></div>
+              <div class="jobs__text">
+                <p>Мы всегда рады увлеченным аккаунт-менеджерам, для которых важно по-настоящему разбираться в продукте, чтобы помочь клиенту найти именно то, что ему нужно, и выстроить долгосрочное сотрудничество. Интерес к сфере Digital, понимание того, как работает и развивается email маркетинг, легкость в общении - это то, что отличает нашего аккаунта от других</p>
+              </div>
+            </div>
+            <div class="jobs__button">
+              <button class="button show_popap">ОТПРАВИТЬ РЕЗЮМЕ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modalDialogcustom">
+        <div class="wrappercontentpopap">
+          <div class="contentpopap"> 
+            <div class="wrapper">
+              <div class="contentpopap__head">
+                <div class="contentpopap__logo"><img src="./images/logo.png" alt=""></div>
+                <div class="contentpopap__title"><span>Apply Now!</span></div>
+                <div class="contentpopap__cancel"><img src="./images/cancel.png" alt=""></div>
+              </div>
+              <form class="form">
+                <div class="form__content">
+                  <div class="form__left">
+                    <input type="text" placeholder="Имя*" required>
+                    <input type="email" placeholder="E-mail*" required>
+                    <input type="text" placeholder="Фамилия*" required>
+                    <input type="tell" placeholder="Телефон" required>
+                    <label class="file_download">
+                      <input type="file" placeholder="Приложите резюме*" required><span>Приложите резюме*</span>
+                      <div>Файл не выбран</div>
+                    </label>
+                  </div>
+                  <div class="form__right">
+                    <textarea placeholder="Расскажите несколько слов о себе"></textarea>
+                  </div>
+                </div>
+                <div class="form__button">
+                  <button class="button" type="submit">ОТПРАВИТЬ РЕЗЮМЕ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./dist/js/jquery-3.2.1.min.js?1"></script>
+    <script src="./scripts/app.js?1"></script>
+  </body>
+</html>

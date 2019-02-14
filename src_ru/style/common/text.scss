@@ -1,0 +1,17 @@
+.text{
+    p{
+        font-size: rem(16);
+        font-weight: 300;
+        line-height: rem(25);
+        margin-bottom: rem(33);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    span{
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: rem(25);
+        margin-bottom: rem(12);
+    }
+}

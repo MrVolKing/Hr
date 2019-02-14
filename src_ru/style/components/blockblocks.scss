@@ -1,0 +1,15 @@
+.blockblocks{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:769px){
+    .blockblocks{
+        &__content{
+            flex-wrap: wrap;
+        }
+        
+    }
+}

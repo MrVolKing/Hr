@@ -15,7 +15,7 @@ block content
                 a(href="./index.html" style="margin-right: 4px;") hr
                 img(src="./images/left-arrow.png", alt="")
                 span
-                    | JOBS
+                    | АКТУАЛЬНЫЕ ВАКАНСИИ
 
         section.sect1(style="background-image: url(./images/sect1_2.png);")
             .wrapper
@@ -26,35 +26,35 @@ block content
                         a(href="./index.html") hr
                         img(src="./images/left-arrow2.png", alt="")
                         span
-                            | JOBS
+                            | АКТУАЛЬНЫЕ ВАКАНСИИ
                     .sect1__titleblock
                         .redsquare
                         .desc
-                            span Jobs
+                            span Актуальные<br class="br"> вакансии
                             
                         
                     .sect1__buttonblock
-                        button.button.show_popap Apply
+                        button.button.show_popap ОТПРАВИТЬ РЕЗЮМЕ
         section.jobs
             .wrapper
                 .jobs__content
                     .jobs__item
                         .jobs__title 
-                            span Backend developer
+                            span Backend разработчик
                         //- .jobs__text
                         //-     p В команду разработки Digital Contact в группу Machine Learning ищем Front-end разработчика уровня middle и выше. Проект связан с автоматизацией маркетинга и продаж (анализ поведения пользователя, Machine Learning, рекомендационные сервисы и т.д.)
                         .jobs__subtitle
-                            span Tasks
+                            span Задачи
                         .jobs__desc
-                            span Developing and supporting microservices, leading small projects
+                            span Разработка и поддержка микросервисов, самостоятельное ведение мини-проектов.
                         .jobs__subtitle
-                            span Skills
+                            span Требования
                         .jobs__desc
-                            span 3 year of relevant experience, good skills in Python or/and Golang, understanding and experience of the technologies in our stack, good skills in work with Git and Unix
+                            span Опыт разработки от 3 лет, хорошее знание python или Golang, владение технологиями нашего стэка, опыт работы и знание git, unix.
                         .jobs__subtitle
-                            span Tech stack
+                            span Стек технологий
                         .jobs__desc
-                            span Python 3, Golang, docker, docker-compose, mysql, mongodb, rabbitmq, redis, elasticsearch, clickhouse, uwsg
+                            span python3, go, docker, docker-compose, mysql, mongodb, rabbitmq, redis, elasticsearch, clickhouse, uwsg
 
                     .jobs__item
                         .jobs__title 
@@ -62,20 +62,23 @@ block content
                         //- .jobs__text
                         //-     p В команду разработки Digital Contact в группу Machine Learning ищем Front-end разработчика уровня middle и выше. Проект связан с автоматизацией маркетинга и продаж (анализ поведения пользователя, Machine Learning, рекомендационные сервисы и т.д.)
                         .jobs__subtitle
-                            span Tasks
+                            span Задачи
                         .jobs__desc
-                            span Predictive modeling and analytics, working with Big Data (digital marketing data)
+                            span Моделирование, предиктивная аналитика, организация сбора, подготовки и работы с большими данными в области Digital-маркетинга
                         .jobs__subtitle
-                            span Skills
-                        .jobs__desc
-                            span solid mathematical background, good knowledge of analytic tools and data processing skills, basic coding knowledge (Python or R), data-driven approach
+                            span Требования
+                        .jobs__ul
+                            ul
+                                li понимание основ теории вероятности / линейной алгебры
+                                li уверенное владение инструментарием / технологиями анализа / обработки данных
+                                li навыки программирования R / Python
+                                li аналитический, data-driven подход к решению задач
 
                     .jobs__item
                         .jobs__title 
-                            span Account manager
+                            span Менеджер по работе с клиентами/аккаунт менеджер
                         .jobs__text
-                            p We’re always interested in enthusiastic account managers in our team. We expect them being really into our product to help our clients with finding the best options and understanding what the clients want and need for the long-term cooperation.
-                            p Being fond of digital marketing, understanding how email marketing works and develops, and strong communication skills make our Account Manager special.
+                            p Мы всегда рады увлеченным аккаунт-менеджерам, для которых важно по-настоящему разбираться в продукте, чтобы помочь клиенту найти именно то, что ему нужно, и выстроить долгосрочное сотрудничество. Интерес к сфере Digital, понимание того, как работает и развивается email маркетинг, легкость в общении - это то, что отличает нашего аккаунта от других
 
                         //- .jobs__subtitle
                         //-     span Задачи
@@ -90,6 +93,6 @@ block content
                         //-         li SCSS
 
                     .jobs__button
-                        button.button.show_popap Apply
+                        button.button.show_popap ОТПРАВИТЬ РЕЗЮМЕ
 
         include ../common/popaps.pug

@@ -1,0 +1,24 @@
+.sect_breadcrumbs{
+    display: none;
+    padding: 20px 0;
+    background-color: $bg_color;
+    a, span{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    a{
+        color: #6e6e6e;
+    }
+    span{
+        color: #6e6e6e;
+    }
+    img{
+        margin-right: 4px;
+    }
+}
+
+@media screen and (max-width:769px){
+    .sect_breadcrumbs{
+        display: flex;
+    }
+}
